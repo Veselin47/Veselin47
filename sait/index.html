@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap"
+        rel="stylesheet">
+        <link rel="icon" href="pick/logo.png" type="image/x-icon">
+    <title>Document</title>
+</head>
+
+<body >
+    <header>
+        <img src="pick/logo.png" alt="logo" class="logo">
+        <nav>
+            <a href="index.html">Начало</a>
+            <a href="info.html">Информация</a>
+            <a href="about us.html">За нас</a>
+            <a href="contact.html">Контакти</a>
+            <div class="animation start-home"></div>
+        </nav>
+        <div class="nav2">
+            <a href="login.html" class="icon-a" target="_blank"><i class='bx bx-user'></i></a>
+            <a href="https://www.facebook.com/veselin.baychev.7" class="icon-a" target="_blank"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/veselin_47/" class="icon-a" target="_blank"><i class='bx bxl-instagram'></i></a>
+        </div>
+    </header>
+    <main class="main-index">
+        <div class="show">
+            <img src="pick/sl-1.jpg" alt="" class="show-pic">
+            
+        </div>
+        <div class="index-text">
+            <div class="index-text-top">
+                <h1>Защо трябва да автоматизирате вашите офис дейности<br>чрез Open Source на Linux</h1>
+            </div>
+            <div class="index-text-bot">
+                <div class="index-cart">
+                    <i class='bx bx-door-open'></i>
+                    <h3>1. Свобода и гъвкавост:</h3>
+                    <a href="info.html">Наyчи повече</a>
+                </div>
+                <div class="index-cart">
+                    <i class='bx bx-dollar-circle'></i>
+                    <h3>2. Ниски разходи:</h3>
+                    <a href="info.html">Наyчи повече</a>
+                </div>
+                <div class="index-cart">
+                    <i class='bx bx-lock-alt'></i>
+                    <h3>3. Сигурност:</h3>
+                    <a href="info.html">Наyчи повече</a>
+                </div>
+                <div class="index-cart">
+                    <i class='bx bx-cloud'></i>
+                    <h3>4. Интеграция и съвместимост:</h3>
+                    <a href="info.html">Наyчи повече</a>
+                </div>
+                <div class="index-cart">
+                    <i class='bx bx-shield-quarter' ></i>
+                    <h3>5. Контрол  и независимост:</h3>
+                    <a href="info.html">Наyчи повече</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-conteiner">
+            <div class="footer-nav">
+                <a href="index.html">Начало</a>
+                <a href="info.html">Информация</a>
+                <a href="about us.html">За нас</a>
+                <a href="contact.html">Контакти</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/veselin.baychev.7"  target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://www.instagram.com/veselin_47/"target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://mail.google.com/mail" target="_blank"><i class='bx bxl-gmail'></i></a>
+            </div>
+            <div class="footer-end">
+                <p>@ Веселин Стефанов Байчев 12В</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        const show = document.querySelector(".show-pic")
+        const images = ['pick/sl-1.jpg', 'pick/sl-2.jpg', 'pick/sl-3.jpg', "pick/sl-4.jpg", 'pick/sl-1.jpg']
+
+        let i = 0;
+        document.onload = setInterval(function () {
+            if (i == images.length - 1) i = 0; {
+            i++;
+            show.src = images[i];
+            
+    }
+        }, 1500);
+
+     
+    </script>
+</body>
+
+</html>
